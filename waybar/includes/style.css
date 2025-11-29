@@ -32,7 +32,7 @@
 }
 
 #workspaces button.active {
-  color: #5a4fcf;
+  color: #84cc16;
 }
 
 #window {
@@ -40,22 +40,22 @@
 }
 
 #network {
-  color: #702963;
+  color: #3b82f6;
   margin-right: 8px;
 }
 
 #pulseaudio {
-  color:  #A69EE9;
+  color: #14b8a6;
   margin-right: 4px;
 }
 
 #cpu {
-  color:  #D896FF;
+  color: #0ea5e9;
   margin-right: 4px;
 }
 
 #temperature {
-  color: #DAB1DA;
+  color: #eab308;
   margin-right: 4px;
 }
 
@@ -65,5 +65,5 @@
 }
 
 #custom-powermenu {
-  color: #800080;
+  color: #f43f5e;
 }
