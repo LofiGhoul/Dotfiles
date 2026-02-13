@@ -1,0 +1,101 @@
+/* ============================================================
+   Wofi — Hillside Reverie Theme
+   Matches waybar palette:
+     Shadow    #1a2a20
+     Meadow    #2a4a30 / #3d6645 / #c5d9c0
+     Sky       #4a7fa5 / #6fa8cc
+     Cloud     #f0dfc0 / #e8c97a
+     Poppy     #e05c4b
+   ============================================================ */
+
+* {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* ── Window ─────────────────────────────────────────────────── */
+window {
+    background-color: rgba(20, 36, 25, 0.96);
+    border: 1px solid rgba(197, 217, 192, 0.15);
+    border-radius: 14px;
+}
+
+/* ── Outer box ──────────────────────────────────────────────── */
+#outer-box {
+    margin: 10px;
+    padding: 8px;
+}
+
+/* ── Search bar ─────────────────────────────────────────────── */
+#input {
+    background-color: rgba(42, 74, 48, 0.60);
+    border: 1px solid rgba(197, 217, 192, 0.18);
+    border-radius: 10px;
+    color: #f0dfc0;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#input:focus {
+    border-color: rgba(111, 168, 204, 0.50);
+    background-color: rgba(42, 74, 48, 0.80);
+    outline: none;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────── */
+#scroll {
+    border: none;
+    margin: 0;
+}
+
+/* ── Inner box ──────────────────────────────────────────────── */
+#inner-box {
+    background: transparent;
+}
+
+/* ── Each entry ─────────────────────────────────────────────── */
+#entry {
+    background-color: transparent;
+    border-radius: 9px;
+    padding: 7px 12px;
+    margin: 2px 0;
+    color: #c5d9c0;
+}
+
+#entry:hover {
+    background-color: rgba(74, 127, 165, 0.18);
+    color: #f0dfc0;
+}
+
+#entry:selected {
+    background-color: rgba(74, 127, 165, 0.28);
+    border: 1px solid rgba(111, 168, 204, 0.35);
+    color: #f0dfc0;
+}
+
+/* ── App icon ───────────────────────────────────────────────── */
+#entry image {
+    margin-right: 10px;
+}
+
+/* ── App name text ──────────────────────────────────────────── */
+#entry label {
+    color: #c5d9c0;
+    font-size: 13px;
+}
+
+#entry:selected label {
+    color: #f0dfc0;
+    font-weight: 500;
+}
+
+#entry:hover label {
+    color: #f0dfc0;
+}
+
+/* ── No results text ────────────────────────────────────────── */
+#text:selected {
+    color: #e8c97a;
+}
