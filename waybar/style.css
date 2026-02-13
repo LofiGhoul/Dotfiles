@@ -1,0 +1,202 @@
+/* ============================================================
+   Waybar — Hillside Reverie Theme
+   GTK-compatible CSS only (no @keyframes, no @import,
+   no backdrop-filter, no animation, no transition)
+   ============================================================ */
+
+* {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* ─── Bar Window ────────────────────────────────────────────── */
+window#waybar {
+    background: transparent;
+}
+
+/* ─── Module Groups ─────────────────────────────────────────── */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(20, 36, 25, 0.82);
+    border-radius: 12px;
+    border: 1px solid rgba(197, 217, 192, 0.14);
+    padding: 0 4px;
+}
+
+/* ─── All Modules Base ──────────────────────────────────────── */
+#custom-logo,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#custom-wlogout,
+#custom-sep,
+#workspaces {
+    padding: 0 10px;
+    color: #c5d9c0;
+}
+
+/* ─── Logo ──────────────────────────────────────────────────── */
+#custom-logo {
+    font-size: 15px;
+    padding-left: 14px;
+    color: #e05c4b;
+}
+
+/* ─── Separator ─────────────────────────────────────────────── */
+#custom-sep {
+    color: rgba(197, 217, 192, 0.15);
+    font-size: 11px;
+    padding: 0 2px;
+}
+
+/* ─── Clock ─────────────────────────────────────────────────── */
+#clock {
+    font-size: 13px;
+    font-weight: 400;
+    color: #f0dfc0;
+    padding: 0 14px 0 10px;
+}
+
+#clock:hover {
+    color: #e8c97a;
+}
+
+/* ─── Workspaces ────────────────────────────────────────────── */
+#workspaces {
+    padding: 0 6px;
+}
+
+#workspaces button {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 12px;
+    padding: 0 11px;
+    margin: 6px 1px;
+    border-radius: 8px;
+    color: rgba(197, 217, 192, 0.4);
+    background: transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(197, 217, 192, 0.08);
+    color: #c5d9c0;
+}
+
+#workspaces button.active {
+    background: rgba(74, 127, 165, 0.30);
+    color: #6fa8cc;
+    border-bottom: 2px solid #4a7fa5;
+    font-weight: 500;
+}
+
+#workspaces button.urgent {
+    background: rgba(224, 92, 75, 0.30);
+    color: #ff8070;
+    border-bottom: 2px solid #e05c4b;
+}
+
+/* ─── PulseAudio ────────────────────────────────────────────── */
+#pulseaudio {
+    color: #8fb8ad;
+    padding: 0 12px;
+}
+
+#pulseaudio:hover {
+    color: #6fa8cc;
+    background: rgba(111, 168, 204, 0.10);
+    border-radius: 8px;
+}
+
+#pulseaudio.muted {
+    color: rgba(197, 217, 192, 0.30);
+}
+
+/* ─── CPU ───────────────────────────────────────────────────── */
+#cpu {
+    color: #c5d9c0;
+    padding: 0 12px;
+}
+
+#cpu:hover {
+    color: #d4f5cc;
+    background: rgba(90, 138, 98, 0.12);
+    border-radius: 8px;
+}
+
+#cpu.warning {
+    color: #e8c97a;
+}
+
+#cpu.critical {
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.15);
+}
+
+/* ─── Memory ────────────────────────────────────────────────── */
+#memory {
+    color: #c5d9c0;
+    padding: 0 12px;
+}
+
+#memory:hover {
+    color: #d4f5cc;
+    background: rgba(90, 138, 98, 0.12);
+    border-radius: 8px;
+}
+
+#memory.warning {
+    color: #d4956a;
+}
+
+#memory.critical {
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.15);
+}
+
+/* ─── Wlogout ───────────────────────────────────────────────── */
+#custom-wlogout {
+    font-size: 15px;
+    padding: 0 14px 0 10px;
+    color: rgba(197, 217, 192, 0.45);
+}
+
+#custom-wlogout:hover {
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.12);
+    border-radius: 8px;
+}
+
+/* ─── Tooltip ───────────────────────────────────────────────── */
+tooltip {
+    background: rgba(20, 36, 25, 0.95);
+    border: 1px solid rgba(197, 217, 192, 0.15);
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: #c5d9c0;
+    font-size: 12px;
+}
+
+tooltip label {
+    color: #c5d9c0;
+}
+
+/* ─── Tray ──────────────────────────────────────────────────── */
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    opacity: 0.5;
+}
+
+#tray > .needs-attention {
+    background: rgba(224, 92, 75, 0.20);
+    border-radius: 6px;
+}

@@ -1,0 +1,119 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 0,
+    "margin-top": 6,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": [
+        "custom/logo",
+        "clock",
+        "custom/sep"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "custom/sep",
+        "tray",
+        "custom/sep",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "custom/wlogout"
+    ],
+
+    "custom/logo": {
+        "format": " 🌸 ",
+        "tooltip": false
+    },
+
+    "custom/sep": {
+        "format": "  ",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%A, %B %d · %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#e8c97a'><b>{}</b></span>",
+                "days": "<span color='#c5d9c0'><b>{}</b></span>",
+                "weeks": "<span color='#8fb8ad'><b>W{}</b></span>",
+                "weekdays": "<span color='#d4956a'><b>{}</b></span>",
+                "today": "<span color='#e05c4b' background='#1a2a20'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8,
+        "show-passive-items": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟  muted",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pamixer -i 2",
+        "on-scroll-down": "pamixer -d 2",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip-format": "{desc} — {volume}%"
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "󱐌 {usage}%",
+        "format-alt": "󱐌 {avg_frequency} GHz",
+        "on-click": "kitty --title btop btop",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {percentage}%",
+        "format-alt": "󰍛 {used:0.1f}G / {total:0.1f}G",
+        "on-click": "kitty --title btop btop",
+        "tooltip-format": "RAM: {used:0.2f} GiB / {total:0.2f} GiB\nSWAP: {swapUsed:0.2f} GiB / {swapTotal:0.2f} GiB",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "custom/wlogout": {
+        "format": "󰐥",
+        "on-click": "wlogout --protocol layer-shell",
+        "tooltip": "Session"
+    }
+}
