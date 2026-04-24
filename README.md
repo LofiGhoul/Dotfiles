@@ -16,6 +16,7 @@ They keep my desktop consistent, fast to set up, and easy to maintain across mac
 - **kitty** – Terminal emulator styiling
 - **fish** – Terminal shell configuration
 - **wlogout** – logout tool and style
+- **aww** – Background configuration
 ---
 
 ## 🎯 Goals
