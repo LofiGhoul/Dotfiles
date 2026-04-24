@@ -1,0 +1,41 @@
+# ── Global ──────────────────────────────────────────────────────
+font=JetBrainsMono Nerd Font 13
+background-color=#1E1E2E
+text-color=#D9E0EE
+border-color=#F2CDCD
+border-size=2
+border-radius=0
+padding=12
+margin=8
+
+width=350
+height=150
+anchor=top-right
+
+icons=1
+icon-path=/usr/share/icons/hicolor
+
+max-visible=5
+sort=-time
+
+default-timeout=5000
+ignore-timeout=0
+
+# ── Urgency: low ────────────────────────────────────────────────
+[urgency=low]
+background-color=#161320
+text-color=#D9E0EE
+border-color=#C9CBFF
+
+# ── Urgency: normal ─────────────────────────────────────────────
+[urgency=normal]
+background-color=#1E1E2E
+text-color=#D9E0EE
+border-color=#F2CDCD
+
+# ── Urgency: high ───────────────────────────────────────────────
+[urgency=high]
+background-color=#1E1E2E
+text-color=#F28FAD
+border-color=#F28FAD
+default-timeout=0

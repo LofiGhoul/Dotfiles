@@ -3,7 +3,6 @@
 }
 
 #waybar {
-  /* background: #171717; */
   background: #0a0a0a;
   color: #fff;
 }
@@ -45,12 +44,12 @@
 }
 
 #pulseaudio {
-  color:  #A69EE9;
+  color: #A69EE9;
   margin-right: 4px;
 }
 
 #cpu {
-  color:  #D896FF;
+  color: #D896FF;
   margin-right: 4px;
 }
 
@@ -66,4 +65,10 @@
 
 #custom-powermenu {
   color: #800080;
+}
+
+#cava {
+  color: #5a4fcf;
+  margin-left: 8px;
+  margin-right: 4px;
 }

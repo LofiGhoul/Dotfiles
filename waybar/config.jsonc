@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin-bottom": 0,
-  "modules-left": ["clock", "custom/separator", "hyprland/workspaces", "custom/separator", "tray"],
+  "modules-left": ["clock", "custom/separator", "hyprland/workspaces", "cava", "custom/separator", "tray"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "temperature",
@@ -19,9 +19,6 @@
     "spacing": 8
   },
   "clock": {
-    // 24 hour
-    // "format": " {:%H:%M} ",
-    // 12 hour
     "format": " 󰸗 {:%I:%M %p} ",
     "interval": 60,
     "tooltip": true,
@@ -31,10 +28,8 @@
     "format": "{icon}",
     "separate-outputs": false,
     "active-only": false,
-    // turn on true to show same all workspaces on each monitor
     "all-outputs": false,
     "format-icons": {
-      // 1-10
       "1": "1",
       "2": "2",
       "3": "3",
@@ -45,7 +40,6 @@
       "8": "8",
       "9": "9",
       "10": "10",
-      // 11-10
       "11": "1",
       "12": "2",
       "13": "3",
@@ -56,37 +50,29 @@
       "18": "8",
       "19": "9",
       "110": "10"
-
-      // // 1-10
-      // "1": "一",
-      // "2": "二",
-      // "3": "三",
-      // "4": "四",
-      // "5": "五",
-      // "6": "六",
-      // "7": "七",
-      // "8": "八",
-      // "9": "九",
-      // "10": "十",
-      // // 11-10
-      // "11": "一",
-      // "12": "二",
-      // "13": "三",
-      // "14": "四",
-      // "15": "五",
-      // "16": "六",
-      // "17": "七",
-      // "18": "八",
-      // "19": "九",
-      // "110": "十"
     }
   },
   "hyprland/window": {
     "format": "{}"
   },
+  
+  "cava": {
+    "framerate": 30,
+    "autosens": 1,
+    "bars": 8,
+    "method": "pipewire",
+    "source": "auto",
+    "stereo": false,
+    "bar_delimiter": 0,
+    "noise_reduction": 0.77,
+    "input_delay": 4,
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "actions": {
+        "on-click-right": "mode"
+    }
+},
   "network": {
     "format": " 󰖩",
-    // "tooltip": "{ifname}",
     "tooltip-format": "{essid}",
     "interval": 2
   },
@@ -94,27 +80,33 @@
     "format": "{icon} {temperatureC}°C ",
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
-    "format-icons": ["", "", ""]
+    "format-icons": ["", "", ""]
   },
   "memory": {
     "format": "󰫗 {}% ",
     "tooltip": "false"
   },
   "cpu": {
-    "format": " {usage}% ",
+    "format": " {usage}% ",
     "tooltip": "false"
   },
   "pulseaudio": {
-    "format": " {volume}%",
+    "format": " {volume}%",
     "scroll-step": 1,
     "on-click": "pavucontrol"
   },
   "battery": {
-    "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format": "{capacity}% {icon} ",
+    "format-charging": "{capacity}%  ",
+    "format-plugged": "{capacity}%  ",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
   },
   "custom/powermenu": {
-    "format": "  ",
+    "format": "  ",
     "tooltip": false,
     "on-click": "exec wlogout -p layer-shell"
   }
