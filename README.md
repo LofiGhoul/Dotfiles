@@ -15,7 +15,7 @@ They keep my desktop consistent, fast to set up, and easy to maintain across mac
 - **mako** – Notification tool and style
 - **kitty** – Terminal emulator styiling
 - **fish & starship** – Terminal shell configuration
-- **wlogout** – logout tool and style
+- **wlogout & hyprlock** – logout tool and style
 - **aww** – Background configuration
 ---
 
