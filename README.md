@@ -7,10 +7,10 @@ They keep my desktop consistent, fast to set up, and easy to maintain across mac
 
 ## 📂 Includes
 
-- **cava & libcava** – Audio visualizer configuration  
+- **cava** – Audio visualizer configuration  
 - **fastfetch** – System info tool setup  
 - **includes** – Shared config fragments used by multiple modules  
-- **waybar** – Status bar layout and style  
+- **waybar & waybar-cava** – Status bar layout and style  
 - **wofi** – App launcher configuration  
 - **mako** – Notification tool and style
 - **kitty** – Terminal emulator styiling
