@@ -3,9 +3,9 @@
     "position": "top",
     "height": 36,
     "spacing": 0,
-    "margin-top": 8,
-    "margin-left": 14,
-    "margin-right": 14,
+    "margin-top": 6,
+    "margin-left": 12,
+    "margin-right": 12,
 
     "modules-left": [
         "custom/logo",
@@ -29,12 +29,12 @@
     ],
 
     "custom/logo": {
-        "format": " 𖦹 ",
+        "format": " 🌸 ",
         "tooltip": false
     },
 
     "custom/sep": {
-        "format": "  ·  ",
+        "format": "  ",
         "tooltip": false
     },
 
@@ -48,11 +48,11 @@
             "weeks-pos": "right",
             "on-scroll": 1,
             "format": {
-                "months":   "<span color='#d4956a'><b>{}</b></span>",
-                "days":     "<span color='#c9b8a8'><b>{}</b></span>",
-                "weeks":    "<span color='#8a7a9b'><b>W{}</b></span>",
-                "weekdays": "<span color='#b8956a'><b>{}</b></span>",
-                "today":    "<span color='#e8a87c' background='#1c1520'><b><u>{}</u></b></span>"
+                "months": "<span color='#e8c97a'><b>{}</b></span>",
+                "days": "<span color='#c5d9c0'><b>{}</b></span>",
+                "weeks": "<span color='#8fb8ad'><b>W{}</b></span>",
+                "weekdays": "<span color='#d4956a'><b>{}</b></span>",
+                "today": "<span color='#e05c4b' background='#1a2a20'><b><u>{}</u></b></span>"
             }
         }
     },
