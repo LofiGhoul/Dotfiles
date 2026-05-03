@@ -1,22 +1,11 @@
 /* ============================================================
-   Waybar — Nectar Theme
-   Inspired by Joji's "Nectar" (2020)
-
-   Palette:
-     Void       #0e0b12   deepest dark, like 3am
-     Dusk       #1c1520   primary bar bg
-     Ember      #2a1e2a   hover surface
-     Petal      #c9b8a8   warm off-white, main text
-     Honey      #d4956a   amber/terracotta accent
-     Nectar     #e8a87c   warm highlight
-     Mauve      #8a7a9b   muted indigo
-     Lilac      #b09ab8   soft lavender
-     Blush      #c4857a   dusty rose
-     Haze       rgba(201,184,168,0.12)  subtle glow
+   Waybar — Hillside Reverie Theme
+   GTK-compatible CSS only (no @keyframes, no @import,
+   no backdrop-filter, no animation, no transition)
    ============================================================ */
 
 * {
-    font-family: "Noto Serif", "Georgia", serif;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
     border: none;
@@ -35,9 +24,9 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    background: rgba(28, 21, 32, 0.88);
-    border-radius: 10px;
-    border: 1px solid rgba(201, 184, 168, 0.10);
+    background: rgba(20, 36, 25, 0.82);
+    border-radius: 12px;
+    border: 1px solid rgba(197, 217, 192, 0.14);
     padding: 0 4px;
 }
 
@@ -51,37 +40,33 @@ window#waybar {
 #custom-sep,
 #workspaces {
     padding: 0 10px;
-    color: #c9b8a8;
+    color: #c5d9c0;
 }
 
 /* ─── Logo ──────────────────────────────────────────────────── */
 #custom-logo {
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 14px;
-    color: #d4956a;
+    color: #e05c4b;
 }
 
 /* ─── Separator ─────────────────────────────────────────────── */
 #custom-sep {
-    color: rgba(201, 184, 168, 0.18);
-    font-size: 10px;
-    font-family: "Noto Sans", sans-serif;
-    padding: 0 0px;
-    letter-spacing: 1px;
+    color: rgba(197, 217, 192, 0.15);
+    font-size: 11px;
+    padding: 0 2px;
 }
 
 /* ─── Clock ─────────────────────────────────────────────────── */
 #clock {
     font-size: 13px;
     font-weight: 400;
-    font-style: italic;
-    color: #e8a87c;
+    color: #f0dfc0;
     padding: 0 14px 0 10px;
-    letter-spacing: 0.5px;
 }
 
 #clock:hover {
-    color: #d4956a;
+    color: #e8c97a;
 }
 
 /* ─── Workspaces ────────────────────────────────────────────── */
@@ -90,126 +75,116 @@ window#waybar {
 }
 
 #workspaces button {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 11px;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 12px;
     padding: 0 11px;
     margin: 6px 1px;
-    border-radius: 6px;
-    color: rgba(201, 184, 168, 0.30);
+    border-radius: 8px;
+    color: rgba(197, 217, 192, 0.4);
     background: transparent;
 }
 
 #workspaces button:hover {
-    background: rgba(201, 184, 168, 0.07);
-    color: #c9b8a8;
+    background: rgba(197, 217, 192, 0.08);
+    color: #c5d9c0;
 }
 
 #workspaces button.active {
-    background: rgba(212, 149, 106, 0.18);
-    color: #e8a87c;
-    border-bottom: 2px solid #d4956a;
-    font-weight: 600;
+    background: rgba(74, 127, 165, 0.30);
+    color: #6fa8cc;
+    border-bottom: 2px solid #4a7fa5;
+    font-weight: 500;
 }
 
 #workspaces button.urgent {
-    background: rgba(196, 133, 122, 0.22);
-    color: #c4857a;
-    border-bottom: 2px solid #c4857a;
+    background: rgba(224, 92, 75, 0.30);
+    color: #ff8070;
+    border-bottom: 2px solid #e05c4b;
 }
 
 /* ─── PulseAudio ────────────────────────────────────────────── */
 #pulseaudio {
-    color: #b09ab8;
+    color: #8fb8ad;
     padding: 0 12px;
 }
 
 #pulseaudio:hover {
-    color: #c9b8a8;
-    background: rgba(176, 154, 184, 0.10);
-    border-radius: 7px;
+    color: #6fa8cc;
+    background: rgba(111, 168, 204, 0.10);
+    border-radius: 8px;
 }
 
 #pulseaudio.muted {
-    color: rgba(201, 184, 168, 0.25);
+    color: rgba(197, 217, 192, 0.30);
 }
 
 /* ─── CPU ───────────────────────────────────────────────────── */
 #cpu {
-    color: #c9b8a8;
+    color: #c5d9c0;
     padding: 0 12px;
 }
 
 #cpu:hover {
-    color: #e8a87c;
-    background: rgba(212, 149, 106, 0.10);
-    border-radius: 7px;
+    color: #d4f5cc;
+    background: rgba(90, 138, 98, 0.12);
+    border-radius: 8px;
 }
 
 #cpu.warning {
-    color: #d4956a;
+    color: #e8c97a;
 }
 
 #cpu.critical {
-    color: #c4857a;
-    background: rgba(196, 133, 122, 0.14);
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.15);
 }
 
 /* ─── Memory ────────────────────────────────────────────────── */
 #memory {
-    color: #c9b8a8;
+    color: #c5d9c0;
     padding: 0 12px;
 }
 
 #memory:hover {
-    color: #e8a87c;
-    background: rgba(212, 149, 106, 0.10);
-    border-radius: 7px;
+    color: #d4f5cc;
+    background: rgba(90, 138, 98, 0.12);
+    border-radius: 8px;
 }
 
 #memory.warning {
-    color: #8a7a9b;
+    color: #d4956a;
 }
 
 #memory.critical {
-    color: #c4857a;
-    background: rgba(196, 133, 122, 0.14);
-}
-
-/* ─── Custom cava ───────────────────────────────────────────── */
-#custom-cava {
-    color: rgba(176, 154, 184, 0.55);
-    font-family: "Noto Sans", monospace;
-    font-size: 11px;
-    letter-spacing: 1px;
-    padding: 0 10px;
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.15);
 }
 
 /* ─── Wlogout ───────────────────────────────────────────────── */
 #custom-wlogout {
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 14px 0 10px;
-    color: rgba(201, 184, 168, 0.35);
+    color: rgba(197, 217, 192, 0.45);
 }
 
 #custom-wlogout:hover {
-    color: #c4857a;
-    background: rgba(196, 133, 122, 0.12);
-    border-radius: 7px;
+    color: #e05c4b;
+    background: rgba(224, 92, 75, 0.12);
+    border-radius: 8px;
 }
 
 /* ─── Tooltip ───────────────────────────────────────────────── */
 tooltip {
-    background: rgba(14, 11, 18, 0.97);
-    border: 1px solid rgba(201, 184, 168, 0.12);
+    background: rgba(20, 36, 25, 0.95);
+    border: 1px solid rgba(197, 217, 192, 0.15);
     border-radius: 10px;
-    padding: 7px 12px;
-    color: #c9b8a8;
+    padding: 6px 10px;
+    color: #c5d9c0;
     font-size: 12px;
-    font-family: "Noto Serif", serif;
 }
 
 tooltip label {
-    color: #c9b8a8;
+    color: #c5d9c0;
 }
 
 /* ─── Tray ──────────────────────────────────────────────────── */
@@ -218,10 +193,10 @@ tooltip label {
 }
 
 #tray > .passive {
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 #tray > .needs-attention {
-    background: rgba(196, 133, 122, 0.18);
-    border-radius: 5px;
+    background: rgba(224, 92, 75, 0.20);
+    border-radius: 6px;
 }
